@@ -1,0 +1,110 @@
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+   
+}
+
+.header-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+        padding-right: 30px;
+        list-style-type: none;
+    }   
+    li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        list-style-type: none;
+    }li a:hover{
+        color: #329A8F;
+    } 
+    .header-item-logo{
+        font-size: 30px;
+        margin-right: 40px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.header-user{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    .header-user-avt{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-image: url('https://cdn5.vectorstock.com/i/1000x1000/51/99/icon-of-user-avatar-for-web-site-or-mobile-app-vector-3125199.jpg');
+        background-color: white;
+        background-size: cover;
+        margin-right: 15px;
+    }
+}
+
+
+.header-btn-logout {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding-top: 20px;
+  }
+  
+  .header-user:hover .header-btn-logout {
+    display: block;
+    position: absolute;
+   margin-left: -170px;
+  }
+  
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .header{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        
+        .header-item-logo{
+            margin : 0 -15px 0 -45px;
+            font-size: 20px;
+        }
+        .header-item{
+            li a{
+                font-size: 13px;
+                margin-right: -20px;
+            }
+        }
+
+        .header-user{
+            margin-left: 80px;
+            .header-user-avt{
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+            }
+            .header-user-name{
+                font-size: 12px;
+            }
+        }
+
+        .header-btn-logout{
+            font-size: 10px;
+            // padding-left: -50px;
+            right: 0;
+            padding-right: 40px;
+        }
+        .header-user.hover .header-btn-logout{
+      
+            margin-left: 0 ;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.todolist-container{
+    margin: 0 auto;
+    width:40%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 3%;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); /* Đổi giá trị box-shadow tại đây */
+    margin-bottom: 5%;
+}
+.form-submit{
+    .form-title{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 35px;
+        color: white;
+    }
+
+    .form-input{
+        width: 100%;
+        padding: 15px 20px;
+        margin: 0 auto;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+    }.form-input:focus{
+        outline: none;
+    }
+    .form-date-picker{
+        width: 181%;
+        padding: 15px 20px ;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .form-btn-add{
+        width: 100%;
+        display: block;
+        border: none;
+        margin-top:20px ;
+        padding: 15px 20px;
+        border-radius: 5px;
+        // background-color: #021A40;
+        font-weight: bold;
+        font-size: 20px;
+        background-image: linear-gradient(to right , #127D87 ,#021A40 , #47CDB0);
+        color: white;
+    }.form-btn-add:hover{
+        background-image: linear-gradient(to left , #127D87 ,#021A40 , #47CDB0);
+        border: none;
+    }
+}
+.form-list{
+    padding: 10px 0;
+    margin-top: 30px;
+    .form-item{
+        color: white;
+        background-color: #021A40;
+        border-radius: 7px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        width: 100%;
+
+       
+        .form-date{
+            font-size: 12px;
+        }
+        button{
+            margin-right: 10px;
+        }
+    }
+}
+.btn-delete{
+    color: white;
+    background-color: white;
+}
+@media (min-width: 320px) and (max-width: 576px) {
+    .todolist-container{
+        width:120%;
+        margin-left: -10%;
+        .form-date-picker{
+            width: 159%;
+        }
+    }
+}

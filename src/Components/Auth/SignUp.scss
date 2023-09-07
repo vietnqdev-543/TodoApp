@@ -1,0 +1,68 @@
+.signUp-container{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 2% 3%;
+    border-radius: 10px;
+    background-color: white;
+    .signUp-title{
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0;
+        color: #01173E;
+        font-weight: bold;
+    }
+    .signUp-input{
+        width: 90%;
+        margin: 7px 5%;
+        padding: 10px 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }.signUp-input:focus{
+        outline: none;
+    }
+    .signUp-btn-submit{
+        width: 90%;
+        border-radius:5px ;
+        background-color: #01173E;
+        color: white;
+        border: none;
+        margin: 5px 5%;
+        padding: 10px ;
+        font-weight: bold;
+    }.signUp-btn-submit:hover{
+        opacity: 0.8;
+        
+    }
+}.signIn-navlink{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px ;
+   li Link{
+    color: white;
+   }
+   li Link:hover{
+    color: darkblue;
+   }
+
+}
+
+@media only screen and (max-width : 740px){
+    .signUp-container{
+        width: 120%;
+        margin-left: -10%;
+        margin-top: 80px;
+        background-color: white;
+        .signUp-title{
+            color: black;
+            font-weight: bold;
+        }.signUp-input:focus{
+            outline: none;
+        }
+    }
+  }
