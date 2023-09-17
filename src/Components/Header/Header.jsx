@@ -19,7 +19,7 @@ const Header = ({ isLoggedIn, onSignOut }) => {
         <ul className='header'>
 
           <div className="header-item">
-            <li className='header-item-logo'>LOGO</li>
+            <li className='header-item-logo'>MY WORK LIST</li>
             <li className='header-item-nav'><Link to="/home">Home</Link></li>
             <li className='header-item-nav'><Link to="/todolist">TodoList</Link></li>
           </div>
